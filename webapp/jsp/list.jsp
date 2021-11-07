@@ -42,5 +42,11 @@
 		<hr>
 	</div>
 	<a href="article?action=articleForm">글쓰기</a>
+	<hr>
+	<form action="/article">
+		<input type="text" name="keyword"/>
+		<input type="hidden" name="action" value="search"/>
+		<input type="submit" value="검색" />
+	</form>
 </body>
 </html>

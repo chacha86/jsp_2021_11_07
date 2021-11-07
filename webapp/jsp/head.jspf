@@ -5,12 +5,13 @@
 <c:choose>
 	<c:when test="${ sessionScope.loginedMember == null }">
 		<div>
-			<a href="/article?action=memberForm">회원가입</a> <a
-				href="/article?action=loginForm">로그인</a>
+			<a href="/article?action=memberForm">회원가입</a> 
+			<a href="/article?action=loginForm">로그인</a>
 		</div>
 	</c:when>
 	<c:otherwise>
 		<div>${ sessionScope.loginedMember.nickname }님 반갑습니다!</div>
+		<a href="/article?action=doLogout">로그아웃</a>
 	</c:otherwise>
 </c:choose>
 <hr>
